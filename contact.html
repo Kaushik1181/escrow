@@ -62,7 +62,7 @@
                 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
                 <strong>Success</strong> Your form has been Successfully submitted.
               </div>
-            <form action="./index.html">
+            <form action="./index.html" onsubmit="showSuccess()">
                 <div>
                 <div class="input-field">
                     <label for="" class="label">Website Name</label>
@@ -88,7 +88,7 @@
                     <label for="" class="label">Payment Gateway Provider</label>
                     <input type="text" class="input" required>
                 </div>
-                <button type="submit" onclick="showSuccess()" class="btn btn--secondary">Submit</button>
+                <button type="submit" class="btn btn--secondary">Submit</button>
                 </div>
 
             </form>
@@ -103,13 +103,13 @@
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         Success! You have Successfully registered with us. Will Contact you Shortly.
       </div> -->
-      <script src="js/main.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <!-- <script src="js/main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
       <script>
           function showSuccess() {
               document.getElementById("success").style.display = "block"
           }
-        AOS.init();
+        // AOS.init();
       </script>
 </body>
 </html>

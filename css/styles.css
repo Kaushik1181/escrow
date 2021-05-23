@@ -363,6 +363,17 @@ a {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .input {
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem;
+  }
+  .input-field {
+    margin: 0;
+    padding: 5px;
+  }
+}
+
 /* Cards */
 
 .card {
@@ -750,6 +761,13 @@ a {
 .nav__brand {
   transform: translateY(5px);
   width: 150px;
+}
+
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
